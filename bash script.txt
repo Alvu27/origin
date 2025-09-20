@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Prompt for user input
+read -p "Enter recipient email address: " RECIPIENT
+read -p "Enter CC recipients (comma-separated): " CC
+read -p "Enter BCC recipients (comma-separated): " BCC
+read -p "Enter email subject: " SUBJECT
+read -p "Enter email body: " BODY
+
+# Set sender email address
+FROM="your_email@example.com" 
+
+# Send email using mail command
+mail -s "$SUBJECT" -r "$FROM" -t "$RECIPIENT" -c "$CC" -b "$BCC" <<< "$BODY"
+
+# Check for errors
+if [ $? -ne 0 ]; then
+  echo "$(date) - Error sending email."
+else
+  echo "$(date) - Email sent successfully."
+fi

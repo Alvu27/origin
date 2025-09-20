@@ -1,0 +1,138 @@
+pwd - print working directory.
+
+Relative paths
+
+cd /- change directory (/ represents directory seperator ie. root directory )
+
+home directory is the immediate subdirectory.
+
+root is the parent directory my home is the sub directory(ie. child directory)
+
+cd ..
+
+cd ../../etc (root_dir/home_dir/etc_dir)
+
+who am i - used to find the current user of the desktop 
+
+/ - represents the "root" directory.
+
+~ - represents the home directory.
+
+in my super putty.
+
+cd .. (it switches to / - parent directory )
+
+cd (moves to my root directory) here the parent directory has seperate sub directories and files.
+
+Creating the folder and files
+
+First I created my sample directory named as "mysampleDirectory"
+
+mkdir /mysampleDirectory
+
+I found that "cd /s" and click on my tab space it shows me the letter starts with directory.
+
+
+for creating the multiple directory in a single directory use the command 
+
+mkdir /al vee ra 
+
+to remove the multiple directory within a single directory use the command 
+
+rmdir /al vee ra
+
+to create a nested directory.
+
+mkdir -p /al/vee/ra (-p is the option or switch to create my parent directory.)
+
+in this I'm creating the al with vee and ra in my parent directory.
+
+cd al/vee ( is used to move to my directory.)
+
+I have tried 
+
+touch pen.txt 
+
+echo "The contents of the pen.txt file"> pen.txt
+
+echo "im the best" >> pen.txt (redirecting the contents of the file in same file as well.)
+
+to transfer the contents of the file in another file ie. pencil.txt
+
+touch pencil.txt
+
+mv pen.txt pencil.txt 
+
+after it transfers the contents of the file in pencil.txt and "pen.txt" will be deleted.
+
+The ways to create the directory 
+
+mkdir "alv"
+mkdir 'alf'
+mkdir "folder 1"
+mkdir 'folder 2'
+mkdir folder\ 3
+mkdir "folder 4" "folder 5"
+mkdir -p "folder 6"/"folder 7"
+
+ls > alv.txt (ie. I'm creating the text file using redirection methods. nano alv.txt for viewing the what are the directories and file are the in a particular directory in editor itself to view in shell use "cat alv.txt".)
+
+echo "to helps me to add the txt in the file" > alv.txt
+
+echo "to add the multiple file in the directory." > eer.txt
+
+echo "to add another files." > a.txt
+
+ls
+
+to view the contents of the multiple files within single command 
+
+use cat tex1.txt tex2.txt tex3.txt
+
+to view the contents of the file in the same directory but different name of the file.
+
+cat tex?.txt 
+
+cat tex* (to view the all the files.)
+
+to combine the multiple files within a single file and the letter starts with same letter
+
+cat t* > combined.txt
+cat combined.txt
+
+to create a multiple file f1.txt f2.txt f3.txt 
+
+echo "My name is alveera" > f1.txt; echo "I'm from ethiraj college" > f2.txt; echo "working at verizon" > f3.txt 
+
+cat f* - to read the contents of the file.
+
+note that it is case sensitve to locate it, therefore, need to be more careful 
+
+to move my contents of the file to directory
+
+mv file.txt dir1
+
+to ensure the file are there in the directory
+
+ls is used for that it is an indirect reference of the directory.
+
+to use it in explitcitly use ls dir1
+
+mv combined.txt .. (represents that I'm moving the text files to my parent directory.)
+
+mv combined.txt . (represents that I'm moving the text files to my current directory.)
+
+mv combined.txt test_* dir3 dir2 (represents that my combined directory is moved to 
+
+mv dir2/combined.txt dir4/dir5/dir6
+
+ls dir2
+
+du -h is used to  find the disk usage in human readable format.
+
+tree command is used to find the directories in family tree level.
+
+in vim editor there is the another way to quit the editor is shift+ZQ.
+
+ln -s directory name is used to find the symbolic links 
+
