@@ -1,0 +1,16 @@
+print("***************************************************")
+
+
+a= int(input("Enter the number of elements in the list:"))
+
+
+b= input("Enter the elements one by one:").split()
+
+i=0 
+
+while i< len(b):
+
+	print(b[i])
+	i+=1
+
+print("****************************************************")

@@ -1,0 +1,396 @@
+list, tuples, dictionary,
+regular expression
+functions
+modules
+json
+file read and write (.txt,.csv)
+
+a= [] 
+
+n=int(input("Enter the number of elements:"))
+for i in range(n):
+	element = input(
+
+
+
+
+
+
+########        data types      #############
+
+##################    Numbers   ################
+
+# a = 5
+# print(a)
+# print(type(a))
+#
+# a = 6
+# print(a)
+#
+# b = 2.0
+# print(type(b))
+#
+# c = 1+2j
+# print(type(c))
+
+
+# ############# Strings   ####################
+### indexing and splitting
+# str1 = 'p'
+# print(type(str1))
+# # #
+# s = "Hi Welcome to python World"
+# print(s)
+# s = '''Sting example
+# which span across multiple
+# lines'''
+# print(s)
+# ['a',1,'b',2,'c',3]
+# s = 'Hello world!'
+# #
+# print("s[4] = ", s[4])
+# print("s[-1] = ",s[-1])
+# print(s[0:10:2])
+#
+# print("s[6:11] = ", s[6:11])
+# print(s[3:-4])
+#
+# # To print string in reverse
+# print(s[::-2])
+# # Strings are immutable in Python
+# s[5] ='d'
+
+### Reassigning strings
+# #
+# str = "HELLO"
+# str[0] = "h"
+# print(str)
+
+# str = "HELLO"
+# print(str)
+# str = "hello"
+# print(str)
+
+###Deleting strings
+# str1 = "JAVATPOINT"
+# #del str[1]
+# del str1
+# print(str1)
+
+
+###String Operators
+# str = "Hello"
+# str1 = " world"
+# print(str*3) # prints HelloHelloHello
+# print(str+str1)# prints Hello world
+# print(str[4]) # prints o
+# print(str[2:4]); # prints ll
+# print('w' in str) # prints false as w is not present in str
+# print('wo' not in str1) # prints false as wo is present in str1.
+# print(r'C://python37') # prints C://python37 as it is written
+# print("The string str : %s"%(str)) # prints The string str : Hello
+
+
+### string functions
+# sampel_string = "hello"
+# print(sampel_string.capitalize())
+# print(sampel_string.upper())
+# print(len(sampel_string))
+# print(sampel_string.isupper())
+
+##########     Lists    ########################
+#
+# a = [5,10,15,20,25,30,35,40]
+#
+# print(a[-2])
+# print(len(a))
+# print(a.index(20))
+# #
+# # #Lists are mutable
+# a[5] = "Hi"
+# print(a)
+#
+# # #slicing & indexing
+# print(a[0:3])
+# #
+# print(a[:])
+# #
+# # print(a[-1])
+# #
+# print(a[-3:7])
+
+
+### Adding elements to a list
+List = [1,2,3]
+# print(List)
+#
+# List.append(4)
+# print(List)
+# List.append(5)
+# List.append(6)
+# print(List)
+#
+# for i in range(7,10):
+#     List.append(i)
+# print(List)
+#
+#
+#
+# List = [1, 2, 3, 4]
+# print("Initial List: ")
+# print(List)
+#
+# List.insert(3, 12)
+# print(List)
+# List.insert(0, 'Geeks')
+# print(List)
+#
+# List = [1, 2, 3, 4]
+# print("Initial List: ")
+# print(List)
+# List.extend([8, 'Geeks', 'Always'])
+# print(List)
+#
+#
+# ###Remove elements from alist
+#
+# List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# print("Initial List: ")
+# print(List)
+# #
+# # # Removing elements from List
+# # # using Remove() method
+# List.remove(5)
+# List.remove(6)
+# print(List)
+#
+#
+# List = [1, 12, 23, 4, 5]
+# List.pop()
+# print("\nList after popping an element: ")
+# print(List)
+# List.pop(1)  #we need to pass index of element
+# #print("\nList after popping a specific element: ")
+# print(List)
+#
+# ###List Comperhension
+# odd_square = [x for x in range(1, 11) if x %2 == 0]
+# print(odd_square)
+# #
+# odd_square = []
+# for x in range(1, 11):
+#     if x % 2 == 1:
+#         odd_square.append(x ** 2)
+#
+# print(odd_square)
+
+
+#################    Tuples      ################################
+
+#t = (5,'Hello', 3.0)
+#
+# print(t[1])
+#
+# print(t[0:3])
+#
+# # Tuples are immutable
+#t[0] = 10
+
+
+
+
+# ##############      sets    ################################
+#
+# a = {5,2,3,1,4}
+#
+# print(a)
+#
+# print(type(a))
+#
+# a = {1,2,2,3,3,3}
+# print(a)
+#
+# #slicing operator [] does not work.
+# a = {1,2,3}
+# print(a[1])
+
+##################      Dictionary      #################################
+
+# d = {'one': 1, 'two': 2}
+# print(type(d))
+# print(d)
+# #
+# print(d['one'])
+# #
+# print(d['three'])
+
+############## dictionary creation ######################
+
+# my_dict = dict()
+# print(my_dict)
+
+# dictionary with integer keys
+# my_dict = {1: 'apple', 2: 'ball'}
+#
+# # dictionary with mixed keys
+# my_dict = {'name': 'John', 1: [2, 4, 3]}
+#
+# # using dict()
+# my_dict = dict({1:'apple', 2:'ball'})
+# my_dict = dict()
+# print(my_dict)
+# # from sequence having each item as a pair
+# my_dict = dict([(1,'apple'), (2,'ball')])
+# print(my_dict)
+################ retriving elements from dictionary     ################
+
+#Changing and adding Dictionary Elements
+# my_dict = {'name': 'Jack', 'age': 26}
+# my_dict['place']= 'chennai'
+# print(my_dict)
+#
+# #print(my_dict['first_name'])
+#
+# print(my_dict.get('first_name'))
+
+# my_dict['age'] = 27
+#
+# print(my_dict)
+#
+# my_dict['address'] = 'Downtown'
+#
+# print(my_dict)
+
+
+
+#################adding elements to a dictionary#########
+
+# Creating an empty Dictionary
+# Dict = {}
+# print(Dict)
+#
+# # Adding elements one at a time
+# Dict[0] = 'Hi'
+# Dict[2] = 'Hello'
+# Dict[3] = 1
+# print(Dict)
+#
+# # Adding set of values
+# # to a single Key
+# Dict['set'] = 2, 3, 4
+# print("\nDictionary after adding 3 elements: ")
+# print(Dict)
+#
+# # Updating existing Key's Value
+# Dict[2] = 'Welcome'
+# print("\nUpdated key value: ")
+# print(Dict)
+#
+# # Adding Nested Key value to Dictionary
+# Dict[5] = {'Nested': {'1': 'apple', '2': 'orange'}}
+# print("\nAdding a Nested Key: ")
+# print(Dict)
+
+
+####################deleting element from a dictionary#######################
+
+# Creating a Dictionary
+# Dict = {1: 'GTS', 2: 'NTS', 3: 'VCG'}
+# #
+# # print("Dictionary =")
+# # print(Dict)
+# # # Deleting some of the Dictionar data
+# del (Dict[1])
+# # print("Data after deletion Dictionary=")
+# print(Dict)
+
+
+###########Dictionary functions##################
+# demo for all dictionary methods
+# dict1 = {1: "Python", 2: "Java", 3: "Ruby", 4: "Scala"}
+#
+# # copy() method
+# dict2 = dict1.copy()
+# print(dict2)
+#
+# # clear() method
+# dict1.clear()
+# print(dict1)
+#
+# # get() method
+# print(dict2.get(1))
+#
+# # items() method
+# print(dict2.items())
+#
+# # keys() method
+# print(dict2.keys())
+#
+# # pop() method
+# dict2.pop(4)
+# print(dict2)
+#
+# # popitem() method
+# dict2.popitem()
+# print(dict2)
+#
+# # update() method
+# dict2.update({3: "Scala"})
+# print(dict2)
+#
+# # values() method
+# print(dict2.values())
+
+
+
+
+
+#############python sets###########################################
+
+# create a set of integer type
+student_id = {112, 114, 116, 118, 115,112}
+print('Student ID:', student_id)
+#
+# #set with duplicate elements
+# numbers = {2, 4, 6, 6, 2, 8}
+# print(numbers)
+#
+# # create an empty set
+# empty_set = set()
+# print(empty_set)
+# # create an empty dictionary
+# empty_dictionary = { }
+# # check data type of empty_set
+# print('Data type of empty_set:', type(empty_set))
+# # check data type of dictionary_set
+# print('Data type of empty_dictionary', type(empty_dictionary))
+#
+#
+# #Add item to a set
+# numbers = {21, 34, 54, 12}
+# print('Initial Set:',numbers)
+# # using add() method
+# numbers.add(32)
+# print('Updated Set:', numbers)
+#
+# #update python set
+# companies = {'Lacoste', 'Ralph Lauren'}
+# tech_companies = ['apple', 'google', 'apple']
+# companies.update(tech_companies)
+# print(companies)
+#
+# #Remove itme from set
+# languages = {'Swift', 'Java', 'Python'}
+# print('Initial Set:',languages)
+# # remove 'Java' from a set
+# removedValue = languages.discard('Java')
+# print('Set after remove():', languages)
+#cicdteam-vzi 
+
+
+
+
+
+
+
+
